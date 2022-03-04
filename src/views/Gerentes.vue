@@ -16,21 +16,16 @@ export default {
   },
   data() {
     return {
-      gerentes: [
-        {
-          nome: 'Paulo',
-          agencia: 1000
-        },
-        {
-          nome: 'Guilherme',
-          agencia: 2000
-        },
-        {
-          nome: 'Ricardo',
-          agencia: 3000
-        }
-      ]
+      gerentes: []
     }
+  },
+  mounted(){
+    this.$http.get('gerentes')
+      .then((res) => {
+        this.gerentes = res.data
+      }).catch((err) => {
+        console.log(err)
+      });
   }
 }
 </script>
