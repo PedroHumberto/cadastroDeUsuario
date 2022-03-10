@@ -6,7 +6,7 @@ Vue.use(Vuex)
 
 const estado = {
     token: null,
-    usuario: {}
+    usuario: {},
 }
 
 
@@ -18,6 +18,19 @@ const mutations= {
     DESLOGAR_USUARIO(state){
         state.token = null
         state.usuario= {}
+    },
+    DELETAR_GERENTE(state, gerente){
+        
+        http.delete(`/gerentes/${gerente.id}`)
+          .then(res => {
+            console.log(res)
+            console.log(state)
+          })
+          .catch(err => {
+            console.log(err)
+          })
+          
+        
     }
 }
 
@@ -37,8 +50,8 @@ const actions = {
                     reject(err)
                 })
         })
-
     }
+    
 }
 
 const getters = {

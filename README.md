@@ -8,11 +8,11 @@ Nele foi possivel compreender melhor o uso de API e controlar o estado através 
 
 Projeto ainda em andamento. Desejo acrescentar mais algumas funções como:
 
-[] - Apos logado adicionar informações na API
+* Apos logado adicionar informações na API
 
-[] - Solicitar o envio de senha pro email caso esqueça
+* Solicitar o envio de senha pro email caso esqueça
 
-[] - Adicionar um perfil e fotos.
+* Adicionar um perfil e fotos.
 
 
 
