@@ -27,12 +27,6 @@ export default {
         console.log(err)
       });
   },
-  beforeRouteEnter (to, from, next) {
-    if(!this.$store.state.token){
-      next ({ name:'login'})
-    }
-    next()
-  }
 }
 </script>
 

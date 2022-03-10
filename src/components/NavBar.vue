@@ -24,15 +24,14 @@
 <script>
 import NavBarLoged from "./NavBarLoged";
 import NavBarLogout from "./NavBarLogout";
+import { mapGetters } from 'vuex'
 export default {
   components: {
     NavBarLoged,
     NavBarLogout,
   },
   computed: {
-    usuarioLogado() {
-      return Boolean(this.$store.state.token);
-    },
+    ...mapGetters(['usuarioLogado'])
   },
 };
 </script>
