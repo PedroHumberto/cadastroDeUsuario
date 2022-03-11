@@ -4,9 +4,10 @@ import http from './http'
 
 Vue.use(Vuex)
 
-const estado = {
+const state = {
     token: null,
     usuario: {},
+    gerentes: {}
 }
 
 
@@ -22,13 +23,10 @@ const mutations= {
     DELETAR_GERENTE(state, gerente){
         
         http.delete(`/gerentes/${gerente.id}`)
-          .then(res => {
-            console.log(res)
-            console.log(state)
-          })
-          .catch(err => {
-            console.log(err)
-          })
+        
+        
+        
+        
           
         
     }
@@ -59,7 +57,7 @@ const getters = {
 }
 
 export default new Vuex.Store({
-    state:estado,
+    state,
     mutations,
     actions,
     getters

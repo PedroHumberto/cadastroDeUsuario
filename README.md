@@ -8,7 +8,7 @@ Nele foi possivel compreender melhor o uso de API e controlar o estado através 
 
 Projeto ainda em andamento. Desejo acrescentar mais algumas funções como:
 
-* Apos logado adicionar informações na API
+* Apos logado adicionar Gerentes e Agencia
 
 * Solicitar o envio de senha pro email caso esqueça
 
